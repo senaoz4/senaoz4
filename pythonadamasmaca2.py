@@ -5,17 +5,9 @@ Created on Mon May  6 20:03:11 2024
 @author: Sena Öz
 """
 
-# Problem Seti 2, adamAsmaca.py
-# İsim:
-# Ortak çalışanlar:
-# Harcanan zaman:
-
 # Adam Asmaca Oyunu
 #------------------------------------
-# Yardımcı kod
-# Bu yardımcı kodu anlamanıza gerek yok,
-# ama fonksiyonları nasıl kullanacağını bilmeniz gerekecek
-# (dökümanları okuduğunuzdan emin olun!)
+
 import random
 import string
 
