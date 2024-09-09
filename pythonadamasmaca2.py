@@ -42,12 +42,7 @@ def choose_word(wordlist):
     """
     return random.choice(wordlist)
 
-# yardımcı kodun sonu
 
-#------------------------------------
-
-# Programdaki herhangi bir yerden erişilebilmesi için
-# kelime listesini değişken kelime listesine yükleyin
 wordlist = load_words()
 
 
@@ -60,7 +55,7 @@ def is_word_guessed(secret_word, letters_guessed):
      returns: boolean, secret_word'ün tüm harfleri letter_guessed içindeyse True;
      Aksi takdirde yanlış
     '''
-# BURAYA KODUNUZU GİRİN VE "pass"ı SİLİN
+
     for i in secret_word:
         if i not in letters_guessed:
             return False
@@ -75,7 +70,7 @@ def get_guessed_word(secret_word, letters_guessed):
     returns: harflerden, alt çizgilerden (_) ve şu ana kadar secret_word
      içindeki hangi harflerin tahmin edildiğini gösteren boşluklardan oluşan dize.
     '''
-# BURAYA KODUNUZU GİRİN VE "pass"ı SİLİN
+
     word=""
     for i in secret_word:
         if i not in letters_guessed:
@@ -91,7 +86,7 @@ def get_available_letters(letters_guessed):
     letter_guessed: şimdiye kadar hangi harflerin tahmin edildiği (harflerin listesi)
     returns: dize (harfler), hangi harflerin henüz tahmin edilmediğini temsil eden harflerden oluşur.
     '''
-# BURAYA KODUNUZU GİRİN VE "pass"ı SİLİN
+
     harfler=""
     for i in string.ascii_lowercase:
         if i not in letters_guessed:
@@ -123,7 +118,7 @@ def adamAsmaca(secret_word):
     
      Problem yazımında detaylandırılan diğer sınırlamaları takip eder.
     '''
-# BURAYA KODUNUZU GİRİN VE "pass"ı SİLİN
+
     print("Adam Asmaca Oyununa Hoş Geldiniz!")
     print("Kelimeniz",len(secret_word)," harfilidir.")
     tahmin_hakkı=6
@@ -194,12 +189,6 @@ def adamAsmaca(secret_word):
 
 
 
-# Adam asmaca işlevinizi tamamladığınızda, dosyanın
-#en altına gidin ve test edilecek ilk iki satırın yorumunu kaldırın
-# (ipucu: kendi testinizi yaparken kendi secret_word'ünüzü
-# seçmek isteyebilirsiniz)
-
-# -----------------------------------
 
 
 
@@ -234,7 +223,6 @@ def show_possible_matches(my_word):
     Bu nedenle, gizli harf(_ ) zaten ortaya çıkmış olan kelimedeki
      harflerden biri olamaz.
     '''
-# BURAYA KODUNUZU GİRİN VE "pass"ı SİLİN
     sayaç=0
     for word in wordlist:
         if match_with_gaps(my_word, word):
@@ -273,7 +261,7 @@ def adamAsmaca_ipuclu(secret_word):
     
      Problem yazımında detaylandırılan diğer sınırlamaları takip eder.
     '''
-# BURAYA KODUNUZU GİRİN VE "pass"ı SİLİN
+
     print("Kelimeniz",len(secret_word)," harfilidir.")
     tahmin_hakkı=6
     letters_guessed=[]
@@ -344,23 +332,17 @@ def adamAsmaca_ipuclu(secret_word):
     if tahmin_hakkı==0:
        print("Üzgünüm, tahminleriniz tükendi. Kelime başkaydı.Kelimemiz:", secret_word)
 
-# adamAsmaca_ipuclu işlevinizi tamamladığınızda, yukarıdaki adam asmaca
-# fonksiyonunu çalıştırmak için kullanılan benzer iki satırı yorumlayın ve
-# ardından bu iki satırın yorumunu kaldırın ve test etmek için bu dosyayı çalıştırın!
-# İpucu: Test ederken kendi secret_word'ünüzü seçmek isteyebilirsiniz.
+
 
 
 if __name__ == "__main__":
-    # pass
-
-    # 2. bölümü test etmek için yukarıdaki pass satırında # işaretini kullanın ve aşağıdaki iki satırda # işaretini silin
+    
     
     secret_word = choose_word(wordlist)
     adamAsmaca(secret_word)
 
 ###############
     
-# 3. bölümü test etmek için yukarıdaki satırlarlarda yeniden # işaretini kullanın ve aşağıdaki iki satırda # işaretini silin
 
     #secret_word = choose_word(wordlist)
     #adamAsmaca_ipuclu(secret_word)
