@@ -38,10 +38,6 @@ SCRABBLE_LETTER_VALUES = {
     "*":0,
 }
 
-# -----------------------------------
-# Yardımcı kod
-# (bu yardımcı kodu anlamanıza gerek yok)
-
 WORDLIST_FILENAME = "wordlist.txt"
 
 
