@@ -1,13 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon May  6 20:03:11 2024
-
-@author: Sena Öz
-"""
-
-# Adam Asmaca Oyunu
-#------------------------------------
-
 import random
 import string
 
@@ -346,3 +336,4 @@ if __name__ == "__main__":
 
     #secret_word = choose_word(wordlist)
     #adamAsmaca_ipuclu(secret_word)
+
