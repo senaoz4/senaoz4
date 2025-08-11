@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-
-
 import math
 import random
 
@@ -232,3 +229,4 @@ if __name__ == "__main__":
     n=HAND_SIZE
     word_list = load_words()
     play_game(word_list)
+
